@@ -2,11 +2,29 @@
     0% {
         transform: rotate(0);
     }
+
+    25%{
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        transform: rotate(-180deg);
+    }
+
+    75%
+    {
+        transform:rotate(-270deg);
+    }
+
     100% {
         transform:rotate(-360deg);
     }
 }
 
 .rodarInfinito{
-    animation: rodar 2s linear infinite;
+    animation: rodar 4s  linear infinite;
+}
+
+body{
+    position: center;
 }

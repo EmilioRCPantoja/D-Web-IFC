@@ -1,0 +1,89 @@
+html{
+    background-color: black ;
+    background-image: url("https://wallpapers.com/images/hd/vaporwave-holographic-sunset-48t0p39h7je2faf9.jpg");
+    
+}
+
+header{
+    text-align: center;
+}
+header > p {
+    
+    background-color:aqua ;
+    display: inline;
+    font-size:x-large;
+   
+}
+li{
+    display: flex;
+    font-weight: 700;
+    
+}
+
+#ul{
+    
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    column-gap:12%;
+    
+}
+nav{
+    background-color: deeppink;
+    display: inline-block;
+    width: 43%;
+    position: relative;
+    left: 30%;    
+}
+
+h1{
+    background-color: aqua;
+    display: inline;
+}
+
+h2{
+    background-color: #a9ee3a;
+}
+
+article>h3{
+    color: white;
+}
+article>p{
+    color: white;
+}
+#principal>article{
+    background-color: #E201FF;
+}
+
+section{
+    position:relative;
+    display: inline-block;
+}
+
+aside{
+    position:absolute;
+    left: 85%;
+    top: 9%;
+    background-color: #5801F0;
+}
+
+aside > p{
+    color: white;
+}
+section:not(#principal) > article > h3{
+    background-color: aliceblue;
+    color: black;
+}
+footer{
+    background-color: rgb(252, 255, 102);
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    display: inline;
+    
+}
+footer > p{
+    display: inline;
+}
+
+
