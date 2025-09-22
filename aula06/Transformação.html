@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Transformação</title>
+	<style>
+div {
+	height: 100px;
+	width: 100px;
+}		
+#simples, #rotacionada {
+	margin: 20px;
+}
+#rotacionada {
+	transform: rotate(45deg);
+}
+#fundo {
+	background-color: green;
+	width: 150px;
+	height: 110px;
+}
+#inclinada {
+	margin: 0 auto;
+	transform: scale(0.85,0.85) rotate(34deg) skewX(-20deg);
+	background-color: yellow;
+	margin-left: 25px;
+	padding: 1px;
+}
+#circulo {
+	background-color: blue;
+	transform: scale(0.7, 0.7) skewX(20deg);
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#faixa{
+	width: 100%;
+	background-color: white;
+	height: 20px;
+	border-radius: 100%;
+}
+
+
+
+	</style>
+</head>
+<body>
+	<div id="simples"></div>
+	<div id="rotacionada"></div>
+	<div id="fundo">
+		<div id="inclinada">
+			<div id="circulo">
+				<div id="faixa">
+					<p>Ordem e Progresso</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

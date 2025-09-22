@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Exemplo de Animação</title>
+<style> 
+html, body {
+	height: 100%;
+	color: black;
+}
+#lento, #rapido {
+	width: 100%;
+	height: 10%;
+}
+#lento {
+    animation-name: moveTexto;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+#rapido {
+	animation-name: moveRapido;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#gremio {
+	background-color: blue;
+	width: 5%;
+}
+#inter { 
+	animation-name: alteraCor;
+    animation-duration: 10s;
+	background-color: red;
+	width: 5%;
+	animation-iteration-count: infinite;
+}
+@keyframes moveRapido {
+	0% { margin-left: 0px; }
+	10% { margin-left: 40px; }
+	20% { margin-left: 80px; }
+	30% { margin-left: 120px; }
+	40% { margin-left: 160px; }
+	50% { margin-left: 200px; }
+	60% { margin-left: 240px; }
+	70% { margin-left: 280px; }
+	80% { margin-left: 320px; }
+	90% { margin-left: 360px; }
+	100% { margin-left: 400px; }
+}
+@keyframes alteraCor {
+	from {
+		background-color: red;
+	}
+	to {
+		background-color: blue;
+	}
+}
+@keyframes moveTexto {
+	0% { margin-left: 0px; }
+	25% { margin-left: 100px; }
+    50% { margin-left: 200px; }
+    75% { margin-left: 300px; }
+    100% { margin-left: 400px; }
+}
+</style>
+</head>
+<body>
+	<div id="rapido">
+		<div id="gremio">GRÊMIO</div>
+	</div>
+	<div id="lento">
+		<div id="inter">INTER</div>
+	</div>
+</body>
+</html>

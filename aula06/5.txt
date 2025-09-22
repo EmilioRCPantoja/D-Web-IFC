@@ -1,0 +1,7 @@
+5.1
+    as classes são "container" e "container fluid"
+
+5.2
+    a diferença é no breakpoint, onde o primeiro tem os breakspoints com limite máximos, diferentemente do fluid
+
+5.3 segue o index.html 
