@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aula JavaScript e jQuery</title>
+	<meta charset="utf-8">
+	<script>
+function soma() {
+	const valor1 = document.querySelector(".js-value-1").value;
+	const valor2 = document.querySelector(".js-value-2").value;
+	const resultado = parseInt(valor1) + parseInt(valor2);
+	alert(resultado);
+}
+function subtrai() {
+	const valor1 = document.querySelector(".js-value-1").value;
+	const valor2 = document.querySelector(".js-value-2").value;
+	const resultado = parseInt(valor1) - parseInt(valor2);
+	alert(resultado);
+}
+function multiplica() {
+	const valor1 = document.querySelector(".js-value-1").value;
+	const valor2 = document.querySelector(".js-value-2").value;
+	const resultado = parseInt(valor1) * parseInt(valor2);
+	alert(resultado);
+}
+function divide() {
+	const valor1 = document.querySelector(".js-value-1").value;
+	const valor2 = document.querySelector(".js-value-2").value;
+	const resultado = parseInt(valor1) / parseInt(valor2);
+	alert(resultado);
+}
+	</script>
+	<style>
+		div{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div id="div">	
+	<form>
+		<input type="number" class="js-value-1" placeholder="Número"  max="100" min="-9"> <br>
+		<input type="number" class="js-value-2" placeholder="Número"  max="100" min="-9"><br>
+		<button class="button" onclick="soma()">Somar</button>
+		<button class="button" onclick="subtrai()">Subtrair</button>
+		<button class="button" onclick="multiplica()">Multiplicar</button>
+		<button class="button" onclick="divide()">Dividir</button>
+	</form>
+</div>
+</body>
+</html>
